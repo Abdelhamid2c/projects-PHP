@@ -1,4 +1,14 @@
 <?php require "includes/header.php"; ?>
 
-hello from index
+
+
+<?php 
+
+    if(isset($_SESSION['username'])){
+        echo "hello " . $_SESSION['username'] ;
+    }else{
+        echo "hello";
+    }
+
+?>
 <?php require "includes/footer.php"; ?>
