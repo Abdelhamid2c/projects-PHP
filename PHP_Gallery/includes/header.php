@@ -1,3 +1,8 @@
+
+<?php
+  session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,22 +46,9 @@ https://templatemo.com/tm-556-catalog-z
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-1 active"
-                aria-current="page"
-                href="index.html"
-                >Photos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-1 active"
-                aria-current="page"
-                href="create.php"
-                >create</a
-              >
-            </li>
+            <?php 
+          if(!isset($_SESSION['username'])) :
+          ?>
             <li class="nav-item">
               <a
                 class="nav-link nav-link-1 active"
@@ -73,6 +65,41 @@ https://templatemo.com/tm-556-catalog-z
                 >login</a
               >
             </li>
+            <?php else : ?>
+                <li class="nav-item">
+                <a
+                  class="nav-link nav-link-1 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Photos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-1 active"
+                  aria-current="page"
+                  href="create.php"
+                  >create</a
+                >
+              </li>
+              <li class="nav-item">
+              <a
+                class="nav-link nav-link-1 active"
+                aria-current="page"
+                href="index.php"
+                >
+            <?php echo $_SESSION['username'] ;?>
+            </a>
+              </li> 
+              <li class="nav-item">
+              <a
+                class="nav-link nav-link-1 active"
+                aria-current="page"
+                href="logout.php"
+                >logout</a
+              >
+            </li>
+            <?php endif;?>
           </ul>
         </div>
       </div>

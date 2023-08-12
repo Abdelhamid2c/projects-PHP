@@ -1,7 +1,7 @@
 <?php 
     
     $hostname = "localhost";
-    $dbname="auth-sys";
+    $dbname="gallery";
     $user = "root";
     $passw ="";
 

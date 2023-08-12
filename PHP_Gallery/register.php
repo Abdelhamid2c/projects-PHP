@@ -3,8 +3,7 @@
 
 <?php 
 
-  if(isset($_SESSION['username']))
-    {header("location:index.php");}
+  if(isset($_SESSION['username'])) {header("location:index.php");}
 
   if(isset($_POST['submit'])){
     if(!$_POST['email'] || !$_POST['username'] || !$_POST['password']){
@@ -23,6 +22,7 @@
         ':username' => $user,
         ':mypassword' => password_hash($passw,PASSWORD_DEFAULT)
       ]);
+      header("location:index.php");
 
     }
   }
