@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalog-Z Bootstrap 5.0 HTML Template</title>
+    <title>Catalog-Z Photo Detail Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
@@ -25,7 +25,7 @@ https://templatemo.com/tm-556-catalog-z
     </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <i class="fas fa-film mr-2"></i>
           Catalog-Z
         </a>
@@ -49,30 +49,6 @@ https://templatemo.com/tm-556-catalog-z
                 >Photos</a
               >
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-1 active"
-                aria-current="page"
-                href="create.html"
-                >create</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-1 active"
-                aria-current="page"
-                href="index.html"
-                >register</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-1 active"
-                aria-current="page"
-                href="index.html"
-                >login</a
-              >
-            </li>
           </ul>
         </div>
       </div>
@@ -92,49 +68,88 @@ https://templatemo.com/tm-556-catalog-z
 
     <div class="container tm-container-content tm-mt-60">
       <div class="row mb-4">
-        <h2 class="col-6 tm-text-primary">Create Photo</h2>
+        <h2 class="col-12 tm-text-primary">Photo title goes here</h2>
+      </div>
+      <div class="row tm-mb-90">
+        <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+          <img src="img/img-01-big.jpg" alt="Image" class="img-fluid" />
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+          <div class="tm-bg-gray tm-video-details">
+            <div class="mb-4">
+              <h3 class="tm-text-gray-dark">Description</h3>
+              <p>
+                Free for both personal and commercial use. No need to pay
+                anything. No need to make any attribution.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row mb-4">
-        <form method="" action="" enctype="multipart/form-data">
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input
-              type="text"
-              name="title"
-              id="form2Example1"
-              class="form-control"
-              placeholder="title" />
-          </div>
-
-          <div class="form-outline mb-4">
-            <textarea
-              type="text"
-              name="description"
-              id="form2Example1"
-              class="form-control"
-              placeholder="description"
-              rows="8"></textarea>
-          </div>
-
-          <div class="form-outline mb-4">
-            <input
-              type="file"
-              name="img"
-              id="form2Example1"
-              class="form-control"
-              placeholder="image" />
-          </div>
-
-          <!-- Submit button -->
-          <button
-            type="submit"
-            name="submit"
-            class="btn btn-primary mb-4 text-center">
-            create
-          </button>
-        </form>
+        <h2 class="col-12 tm-text-primary">Explore More Photos</h2>
       </div>
+      <div class="row mb-3 tm-gallery">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="img/img-04.jpg" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center">
+              <h2>Clocks</h2>
+              <a href="photo-detail.html">View more</a>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light">18 Oct 2020</span>
+            <span>by Mohamed Hassan</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="img/img-03.jpg" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center">
+              <h2>Clocks</h2>
+              <a href="photo-detail.html">View more</a>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light">18 Oct 2020</span>
+            <span>by Mohamed Hassan</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="img/img-02.jpg" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center">
+              <h2>Clocks</h2>
+              <a href="photo-detail.html">View more</a>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light">18 Oct 2020</span>
+            <span>by Mohamed Hassan</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center">
+              <h2>Clocks</h2>
+              <a href="photo-detail.html">View more</a>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light">18 Oct 2020</span>
+            <span>by Mohamed Hassan</span>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
     </div>
+    <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
       <div class="container-fluid tm-container-small">
@@ -144,13 +159,9 @@ https://templatemo.com/tm-556-catalog-z
               About Catalog-Z
             </h3>
             <p>
-              Catalog-Z is free
-              <a rel="sponsored" href="https://v5.getbootstrap.com/"
-                >Bootstrap 5</a
-              >
-              Alpha 2 HTML Template for video and photo websites. You can freely
-              use this TemplateMo layout for a front-end integration with any
-              kind of CMS website.
+              Integer ipsum odio, pharetra ac massa ac, pretium facilisis nibh.
+              Donec lobortis consectetur molestie. Nullam nec diam dolor. Fusce
+              quis viverra nunc, sit amet varius sapien.
             </p>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
@@ -214,7 +225,6 @@ https://templatemo.com/tm-556-catalog-z
       $(window).on("load", function () {
         $("body").addClass("loaded");
       });
-      console.log("hello");
     </script>
   </body>
 </html>
